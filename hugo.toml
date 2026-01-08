@@ -2,3 +2,7 @@ baseURL = 'https://kliwn.dev'
 languageCode = 'en-us'
 title = 'Keanu Liwongan'
 theme="archie"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
