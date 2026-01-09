@@ -50,6 +50,10 @@
 		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="{{ $darkstyle.Permalink }}" {{ if eq .Site.Params.mode "auto" }}media="(prefers-color-scheme: dark)"{{ end }} {{ if eq .Site.Params.mode "toggle" }}disabled{{ end }} />
 	{{- end -}}
 
+	{{- if .Site.Params.math | default false -}}
+    	{{ partialCached "math.html" . }}
+  	{{- end -}}
+
 	<!-- Mathjax support -->
 	{{- if .Site.Params.mathjax | default false -}}
 		<script type="text/javascript"

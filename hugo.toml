@@ -1,5 +1,5 @@
 baseURL = 'https://kliwn.dev'
-languageCode = 'en-us'
+languageCode = 'en-ca'
 title = 'Keanu Liwongan'
 theme="archie"
 copyright = "© Keanu Liwongan"
@@ -18,12 +18,23 @@ pygmentscodefencesguesssyntax = true
   mode = "toggle"
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "My personal website, [obviously](https://www.youtube.com/watch?v=dQw4w9WgXcQ)"
-	mathjax = true # enable MathJax support
-	katex = true # enable KaTeX support
+	# mathjax = false
+	# katex = false
+  description = "My personal website. Stay tuned for in-depth codebase dives, project write-ups, and more!"
   customcss = ["css/custom.css"]
+  math = true
   [params.author]
       email = 'keanu.liwongan@gmail.com'
       name = 'Keanu Liwongan'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
 
 # Social Tags
 
