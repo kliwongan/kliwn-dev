@@ -8,22 +8,22 @@ pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "yourDisqusShortname"
+# disqusShortname = "yourDisqusShortname"
 
 [pagination]
   pagerSize = 3 # articles per page
 
 [params]
 	# mode="auto" # color-mode → light,dark,toggle or auto
-    mode = "dark"
+  mode = "toggle"
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "My personal website, [obviously](https://www.youtube.com/watch?v=dQw4w9WgXcQ)"
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
-    customcss = ["css/custom.css"]
-    [params.author]
-        email = 'keanu.liwongan@gmail.com'
-        name = 'Keanu Liwongan'
+  customcss = ["css/custom.css"]
+  [params.author]
+      email = 'keanu.liwongan@gmail.com'
+      name = 'Keanu Liwongan'
 
 # Social Tags
 
@@ -46,8 +46,8 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "All posts"
-url = "/posts"
+name = "Blog"
+url = "/blog"
 weight = 2
 
 [[menu.main]]
