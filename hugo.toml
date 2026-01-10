@@ -1,6 +1,6 @@
-baseURL = 'https://kliwn.dev'
-languageCode = 'en-ca'
-title = 'Keanu Liwongan'
+baseURL = "https://kliwn.dev/"
+languageCode = "en-ca"
+title = "Keanu Liwongan"
 theme="archie"
 copyright = "© Keanu Liwongan"
 # Code Highlight
